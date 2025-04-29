@@ -1,38 +1,105 @@
-.App {
+
+.app-container {
+  text-align: center;
+  margin-top: 50px;
+  font-family: Arial, sans-serif;
+}
+
+.logout-container {
+  margin: 20px 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.user-info {
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #f9f9f9;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.user-info h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #333;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.user-email {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+/* General */
+input, button {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+button {
+  background-color: #4CAF50;
   color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #45a049;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* AuthForm específico */
+.auth-form {
+  margin-top: 20px;
+}
+
+.auth-form input {
+  width: 250px;
+  margin-bottom: 10px;
+}
+
+.auth-form button {
+  width: 150px;
+  margin: 5px;
+}
+
+/* TaskManager */
+.task-manager {
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #f0f8ff;
+}
+
+.task-manager input {
+  width: 300px;
+}
+
+.task-manager ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-manager li {
+  background-color: #ffffff;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: left;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Logout Button */
+.logout-button {
+  margin-bottom: 20px;
+  background-color: #f44336;
+}
+
+.logout-button:hover {
+  background-color: #d32f2f;
 }
